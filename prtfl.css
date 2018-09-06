@@ -837,6 +837,10 @@ td.circle:before {
     text-shadow: 2px 5px #05380d;
 }
 
+#link {
+    cursor: pointer;
+}
+
 .green-name-heading {
     font-size: 60px;
     text-shadow: 2px 5px #05380d;

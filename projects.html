@@ -203,6 +203,9 @@
                                         A rudimentary train simulator using concepts in concurrency.
                                     </p>
                                 </div>
+                                <div class="panel-footer">
+                                    <small>View GitHub repository <a id="link" href="https://github.com/AlxDt/caltrain2">here</a>.</small>
+                                </div>
                             </div>
                         </div>
                         <div class="col-md-6">
@@ -240,30 +243,6 @@
 
     </div>
     <script>
-        var app = angular.module('myEtits', []);
-
-        app.controller('tite', function($scope) {
-
-
-            $scope.things = [
-
-            ];
-
-            $.ajax({
-                url: 'https://www.googleapis.com/youtube/v3/activities?part=snippet,contentDetails&channelId=UCQgQ-KGhqAcm0Bjf8UdcxMA&key=AIzaSyAbxPrSLwGHV9gFudHc5NiBHaO54gBxrXg',
-                type: 'GET',
-                data: {
-                    code: "wew"
-                },
-                success: function(data) {
-                    $scope.thingsList = [];
-                    for (var i = 0; i < data.items.length; i++) {
-                        var obj = data.items[i];
-                        $('#holder').append('<iframe src="https://www.youtube.com/embed/' + obj.contentDetails.upload.videoId + '"width="450" frameBorder="0" style="margin-left:5px;margin-right:5px;" height="345"></iframe>')
-                    }
-                }
-            })
-        });
         $(document).ready(function() {
 
             $(document).on('scroll', function(e) {
