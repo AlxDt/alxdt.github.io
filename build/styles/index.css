@@ -1,0 +1,245 @@
+/*intro css*/
+.title
+{
+  position: relative;
+  width: 782px;
+  height: 161px;
+  left: 175px;
+  
+
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  line-height: normal;
+  font-size: 72px;
+
+  color: #01E067;
+
+}
+.slogan
+{
+  color: black;
+  padding-left: 1em;
+}
+
+.ocean { 
+  height: 10%;
+  width:100%;
+  position:relative;
+  bottom:0;
+  left:0;
+  background: #01E067;
+  margin-top: 20em;
+  z-index:-1;
+}
+
+.wave {
+  font-color: #01E067;
+  background: url(../../assets/svg/wave.svg) repeat-x; 
+  position: absolute;
+  top: -198px;
+  width: 6400px;
+  height: 198px;
+  animation: wave 7s cubic-bezier( 0.36, 0.45, 0.63, 0.53) infinite;
+  transform: translate3d(0, 0, 0);
+}
+
+.wave:nth-of-type(2) {
+  top: -175px;
+  animation: wave 7s cubic-bezier( 0.36, 0.45, 0.63, 0.53) -.125s infinite, swell 7s ease -1.25s infinite;
+  opacity: 1;
+}
+
+@keyframes wave {
+  0% {
+    margin-left: 0;
+  }
+  100% {
+    margin-left: -1600px;
+  }
+}
+
+@keyframes swell {
+  0%, 100% {
+    transform: translate3d(0,-25px,0);
+  }
+  50% {
+    transform: translate3d(0,5px,0);
+  }
+}
+/*carousel css*/
+.carousel-item > img
+{
+  width: 100%;
+}
+.fa-chevron-left
+{
+  font-size: 30px;
+  margin-right: 3em;
+
+}
+.fa-chevron-left:hover
+{
+  color: white;
+  
+}
+.fa-chevron-right
+{
+  font-size: 30px;
+  margin-left: 3em;
+
+}
+.fa-chevron-right:hover
+{
+  color: white;
+  
+}
+
+
+/* Announcements css */
+.Announcements{
+  display: flex;
+  width: auto;
+  padding-left: 3em;
+  padding-top: 3em;
+
+
+}
+
+
+/* Rectangle */
+.Rectangle{
+  position: relative;
+  width: 372px;
+  height: 30px;
+  background: #01E067;
+  border-radius: 100px;
+  margin-top: 2em;
+  margin-left: -20.5em;
+  z-index: -1;
+ 
+}
+
+/* ANNOUNCEMENTS */
+.ANNOUNCEMENTS{
+ 
+  width: 409px;
+  height: 63px;
+  padding-left: 0.5em;
+
+  font-family: Sarabun;
+  font-style: normal;
+  font-weight: bold;
+  line-height: normal;
+  font-size: 48px;
+
+  color: #2F2F2F;
+}
+.articles
+{
+  display: block;
+  padding-left: 10em;
+  padding-top: 8em;
+  padding-bottom: 10em;
+  justify-content: space-between;
+
+}
+.message
+{
+  
+  margin: auto 50px;
+
+}
+
+.message-header
+{
+ 
+  font-family: Sarabun;
+  font-style: normal;
+  font-weight: bold;
+  line-height: normal;
+  font-size: 20px;
+  text-align: justify;
+  letter-spacing: 0.03em;
+
+  color: #0B572E;
+
+}
+
+}
+.message-header > span
+{  
+  font-family: inherit;
+  font-size: 14px;
+  text-align: justify;
+  letter-spacing: 0.03em;
+  margin-left: 0.5em;
+
+  color: black;
+
+}
+.message-body
+{
+  padding-top: 0.4em;
+  width:90%;
+  height: 5%;
+
+  font-family: Lusitana;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 27px;
+  font-size: 18px;
+  text-align: justify;
+  letter-spacing: 0.03em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #555555;
+
+}
+.message-end
+{
+  display: flex;
+}
+.message-end > hr
+{
+  text-align: left;
+  width: 50%;
+  height: 1px;
+  background: #A3A3A3;
+  border-radius: 3px;
+  margin-right: 2em;
+
+}
+.message-end > a,  .message-end > a:hover
+{
+  font-family: Lusitana;
+  font-style: normal;
+  font-weight: normal;
+  line-height: normal;
+  font-size: 16px;
+  text-align: justify;
+  letter-spacing: 0.03em;
+  color: #0B572E;
+}
+.all
+{
+  text-align:center;
+}
+.viewall, .viewall:hover
+{
+  width: 241.08px;
+  height: 48px;
+  font-family: Lusitana;
+  font-style: normal;
+  font-weight: normal;
+  line-height: normal;
+  font-size: 24px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 2em;
+  color: white;
+  
+  border-radius: 3px;
+  background-color:  #0B572E;
+
+}

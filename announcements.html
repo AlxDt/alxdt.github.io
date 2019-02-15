@@ -5,25 +5,27 @@
 	<meta charset="UTF-16">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>Home Page</title>
+	<title>OneCCS - Announcements</title>
 
 	<!--[if lt IE 9]>
 	  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
 	<![endif]-->
 
-	<script src="build/scripts/jquery.min.js"></script>
+	<!-- <script src="build/scripts/jquery.min.js"></script> -->
 	<script src="assets/scripts/script.js"></script>
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
 	<link href="https://fonts.googleapis.com/css?family=Aleo:400,700|Sarabun:400,700" rel="stylesheet">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
 				integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 	<link rel="stylesheet" href="build/styles/skeleton.min.css">
-	<link rel="stylesheet" href="build/styles/main.css">
-	<link rel="stylesheet" href="build/styles/index.css">
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-	<!-- Add page specific styles here -->
+ 	<link rel="stylesheet" href="build/styles/main.css">
+  	<link rel="stylesheet" href="build/styles/index.css">
+  	<link rel="stylesheet" href="build/styles/announcements.css">
+
+ 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
 </head>
 
 <body>
@@ -35,7 +37,7 @@
 
 		<div class="links">
 			<ul>
-				<li class="dropdown">
+				<li class="dropdown active">
 					<a href="announcements.html">Announcements <i class="fas fa-caret-down"></i></a>
 					<ul>
 						<li><a href="calendar.html">Activities Calendar</a></li>
@@ -79,48 +81,9 @@
 	</nav>
 
 	<div id="content">
-		<div id="intro">
-			<div class="title">
-				<div class="titlehead">ONE CCS</div>
-				<div class="slogan">SLOGAN HERE</div>
-			</div>
-			<div class="ocean">
-			  <div class="wave"></div>
-			  <div class="wave"></div>
-			</div>
-		</div>
-		<div id="carousel">
-			<div id="demo" class="carousel slide" data-ride="carousel">
-
-			  <ul class="carousel-indicators">
-			    <li data-target="#demo" data-slide-to="0" class="active"></li>
-			    <li data-target="#demo" data-slide-to="1"></li>
-			    <li data-target="#demo" data-slide-to="2"></li>
-			  </ul>
-
-			  <div class="carousel-inner">
-			    <div class="carousel-item active">
-			      <img src="https://via.placeholder.com/1440x500" alt="Los Angeles">
-			    </div>
-			    <div class="carousel-item">
-			      <img src="https://via.placeholder.com/1440x500" alt="Chicago">
-			    </div>
-			    <div class="carousel-item">
-			      <img src="https://via.placeholder.com/1440x500" alt="New York">
-			    </div>
-
-			  </div>
-
-			  <a class="carousel-control-prev" href="#demo" data-slide="prev">
-			    <i class="fas fa-chevron-left"></i>
-			  </a>
-			  <a class="carousel-control-next" href="#demo" data-slide="next">
-			     <i class="fas fa-chevron-right"></i>
-			  </a>
-
-			</div>
-		</div>
-		<div id="announcements">
+		<!-- Begin content creation here -->
+		
+   		<div id="announcements">
 			<a href="announcements.html" class="Announcements">
 				<span class="ANNOUNCEMENTS">ANNOUNCEMENTS
 				
@@ -130,6 +93,41 @@
 				</svg> 
 				 
 			</a>
+			<div id="searchbox">
+				<div class="stitle">
+					<form action="#" id="filter-title">
+					  <label class="label">Title</label>
+					  <div class="control">
+					    <input class="input" type="text" placeholder="Search title here...." id="title">
+					  </div>
+					</form>
+				</div>
+				
+				<div class="sbatch">
+					<form action="#" id="filter-batch">
+						<label for="Batch">Batch</label>
+						<div class="control">
+							<select name="batch" id="batch">
+								<option value="1" selected>All Batches</option>
+								<option value="2">Batch 115</option>
+								<option value="3">Batch 116</option>
+								<option value="4">Batch 117</option>
+								<option value="5">Batch 118</option>
+							</select>
+						</div>
+					</form>
+				</div>
+
+				<div class="sdate">
+					<form action="#" id="filter-date">
+						<label class="label">Date</label>
+					  <div class="control">
+					    <input class="input" type="date" id="date">
+					  </div>
+					</form>
+				</div>
+
+			</div>
 
 			<div class="articles">	
 				<article class="message">
@@ -139,7 +137,7 @@
 				 	<div class="message-body">
 				  	 Dismember a mouse and then regurgitate parts of it on the family room floor i shredded your linens for you. Annoy kitten brother with poking my slave human didn't give me any food so i pooped on the floor or small kitty warm kitty little balls of fur so meow to be let out so love blinks and purr purr purr purr yawn yet cat cat moo moo lick ears...
 				 	</div>
-					<div class="message-end"> <hr> <a href="announcementpage.html">Read more</a></div>
+					<div class="message-end"> <hr> <a href="announcementpage.html#">Read more</a></div>
 
 				</article>
 				
@@ -150,7 +148,7 @@
 				 	<div class="message-body">
 				  	 Dismember a mouse and then regurgitate parts of it on the family room floor i shredded your linens for you. Annoy kitten brother with poking my slave human didn't give me any food so i pooped on the floor or small kitty warm kitty little balls of fur so meow to be let out so love blinks and purr purr purr purr yawn yet cat cat moo moo lick ears...
 				 	</div>
-					<div class="message-end"> <hr> <a href="announcementpage.html">Read more</a></div>
+					<div class="message-end"> <hr> <a href="announcementpage.html#">Read more</a></div>
 
 				</article>
 
@@ -161,16 +159,24 @@
 				 	<div class="message-body">
 				  	 Dismember a mouse and then regurgitate parts of it on the family room floor i shredded your linens for you. Annoy kitten brother with poking my slave human didn't give me any food so i pooped on the floor or small kitty warm kitty little balls of fur so meow to be let out so love blinks and purr purr purr purr yawn yet cat cat moo moo lick ears...
 				 	</div>
-					<div class="message-end"> <hr> <a href="announcementpage.html">Read more</a></div>
+					<div class="message-end"> <hr> <a href="announcementpage.html#">Read more</a></div>
 
 				</article>
 
-			
+				 
 			</div>
-			 <div class="all"><a href="announcements.html"  ><button class="viewall">View All</button></a></div>
+			<div class="pagination">
+				<a href="#" id="caret"><i class="fas fa-caret-left"></i></a>
+				<a href="#" class="active">1</a>
+				<a href="#" >2</a>
+				<a href="#">3</a>
+				<a href="#">4</a>
+				<a href="#">5</a>
+				<a href="#">6</a>
+				<a href="#" id="caret"><i class="fas fa-caret-right"></i></a>
+			</div>
 		</div>
 	</div>
-
 
 	<footer>
 		<div>

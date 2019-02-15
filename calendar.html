@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-16">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>OneCCS - Activities Calendar</title>
+
+  <!--[if lt IE 9]>
+	  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+	<![endif]-->
+
+  <script src="build/scripts/jquery.min.js"></script>
+  <script src="assets/scripts/script.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Aleo:400,700|Sarabun:400,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+        crossorigin="anonymous">
+  <link rel="stylesheet" href="build/styles/skeleton.min.css">
+  <link rel="stylesheet" href="build/styles/main.css">
+  <link rel="stylesheet" href="build/styles/faculty-calendar.css">
+  <!-- Add page specific styles here -->
+</head>
+
+<body>
+
+  <nav id="navigation">
+    <a href="index.html" class="icon">
+      <img src="assets/img/icon_sample.png" alt="One CCS" />
+    </a>
+
+    <div class="links">
+      <ul>
+        <li class="active dropdown">
+          <a href="announcements.html">Announcements <i class="fas fa-caret-down"></i></a>
+          <ul>
+            <li class="active"><a href="calendar.html">Activities Calendar</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="faculty.html">Faculty</a>
+        </li>
+        <li>
+          <a href="organizations.html">Organizations</a>
+        </li>
+        <li class="dropdown">
+          <a href="processes.html">Processes <i class="fas fa-caret-down"></i></a>
+          <ul>
+            <li>
+              <a href="processes.html#enrollment">Enrollment</a>
+            </li>
+            <li>
+              <a href="processes.html#enlistment">Enlistment</a>
+            </li>
+            <li>
+              <a href="processes.html#adjustment">Adjustment</a>
+            </li>
+            <li>
+              <a href="processes.html#shifting">Shifting</a>
+            </li>
+          </ul>
+        </li>
+
+        <li class="dropdown">
+          <a href="#">Contact <i class="fas fa-caret-down"></i></a>
+          <ul>
+            <li><a href="#">Batch 118</a></li>
+            <li><a href="#">Batch 117</a></li>
+            <li><a href="#">Batch 116</a></li>
+            <li><a href="#">Batch 115</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div id="content">
+    <h1 class="highlighted-header">
+      CALENDAR
+    </h1>
+    <div id="body" class="body-calendar">
+      <div id="year">
+      </div>
+      <script> let d = new Date(); $("#year").text(d.getFullYear()); </script>
+      <div id="months">
+        <span data-id="1" class="selected">Jan</span>
+        <span data-id="2">Feb</span>
+        <span data-id="3">Mar</span>
+        <span data-id="4">Apr</span>
+        <span data-id="5">May</span>
+        <span data-id="6">Jun</span>
+        <span data-id="7">Jul</span>
+        <span data-id="8">Aug</span>
+        <span data-id="9">Sep</span>
+        <span data-id="10">Oct</span>
+        <span data-id="11">Nov</span>
+        <span data-id="12">Dec</span>
+      </div>
+      <div>
+        <table id="calendar">
+          <thead>
+            <tr>
+              <th>Monday</th>
+              <th>Tuesday</th>
+              <th>Wednesday</th>
+              <th>Thursday</th>
+              <th>Friday</th>
+              <th>Saturday</th>
+              <th>Sunday</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="selected">
+                <div class="cell">
+                  <span class="day">1</span>
+                  <ul>
+                    <li>CCS Month</li>
+                  </ul>
+              </div>
+						</td>
+              <td>
+                <div class="cell"><span class="day">2</span>
+              </div>
+						</td>
+              <td>
+                <div class="cell"><span class="day">3</span>
+              </div>
+						</td>
+              <td>
+                <div class="cell"><span class="day">4</span>
+              </div>
+						</td>
+              <td>
+                <div class="cell"><span class="day">5</span>
+              </div>
+						</td>
+              <td>
+                <div class="cell"><span class="day">6</span>
+              </div>
+						</td>
+              <td>
+                <div class="cell"><span class="day">7</span>
+              </div>
+						</td>
+            </tr>
+            <tr>
+              <td>
+                <div class="cell"><span class="day">8</span>
+              </div>
+						</td>
+              <td>
+                <div class="cell"><span class="day">9</span>
+              </div>
+						</td>
+              <td>
+                <div class="cell"><span class="day">10</span>
+              </div>
+						</td>
+              <td>
+                <div class="cell"><span class="day">11</span>
+              </div>
+						</td>
+              <td>
+                <div class="cell"><span class="day">12</span>
+              </div>
+						</td>
+              <td>
+                <div class="cell"><span class="day">13</span>
+              </div>
+						</td>
+              <td>
+                <div class="cell"><span class="day">14</span>
+              </div>
+						</td>
+            </tr>
+            <tr>
+              <td>
+                <div class="cell"><span class="day">15</span>
+              </div>
+						</td>
+              <td>
+                <div class="cell"><span class="day">16</span>
+              </div>
+						</td>
+              <td>
+                <div class="cell"><span class="day">17</span>
+              </div>
+						</td>
+              <td>
+                <div class="cell"><span class="day">18</span>
+              </div>
+						</td>
+              <td>
+                <div class="cell"><span class="day">19</span>
+              </div>
+						</td>
+              <td>
+                <div class="cell"><span class="day">20</span>
+              </div>
+						</td>
+              <td>
+                <div class="cell"><span class="day">21</span>
+              </div>
+						</td>
+            </tr>
+            <tr>
+              <td>
+                <div class="cell"><span class="day">22</span>
+              </div>
+						</td>
+              <td>
+                <div class="cell"><span class="day">23</span>
+              </div>
+						</td>
+              <td>
+                <div class="cell"><span class="day">24</span>
+              </div>
+						</td>
+              <td>
+                <div class="cell"><span class="day">25</span>
+              </div>
+						</td>
+              <td>
+                <div class="cell"><span class="day">26</span>
+              </div>
+						</td>
+              <td>
+                <div class="cell"><span class="day">27</span>
+              </div>
+						</td>
+              <td>
+                <div class="cell"><span class="day">28</span>
+              </div>
+						</td>
+            </tr>
+            <tr>
+              <td>
+                <div class="cell"><span class="day">29</span>
+              </div>
+						</td>
+              <td>
+                <div class="cell"><span class="day">30</span>
+              </div>
+						</td>
+              <td>
+                <div class="cell"><span class="day">31</span>
+              </div>
+						</td>
+              <td> </td>
+              <td> </td>
+              <td> </td>
+              <td> </td>
+            </tr>
+            <tr>
+              <td> </td>
+              <td> </td>
+              <td> </td>
+              <td> </td>
+              <td> </td>
+              <td> </td>
+              <td> </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div id="agenda">
+        <div class="header">
+          <!-- <h3>Agenda</h3> -->
+          <h3>Termlong agenda</h3>
+          <!-- <span>January 1, 2019</span> -->
+        </div>
+        <div class="list">
+          <ul>
+            <li><b>OJT Support Program</b><br />A committee will be created to gather and address concerns that are related to OJT whether it be pre-deployment or during deployment.</li>
+            <li><b>Company List Expansion</b><br />The externals committee will help the practicum coordinators expand the list of the current OJT company list by extablishing connections.</li>
+            <li><b>Lost Souls Project</b><br />The batch government aims to aid the students who are delayed by helping fix their flowcharts and take OJT and thesis on time.</li>
+			<li><b>Thesis Support Program</b><br />A document will be created to be able to help students write certain aspects of our document and guide them with their presentations.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <footer>
+    <div>
+      <a href="#" class="fab fa-instagram mx-2"></a>
+      <a href="#" class="fab fa-twitter mx-2"></a>
+      <a href="#" class="fab fa-facebook-square mx-2"></a>
+    </div>
+    <div class="copyright">&#x24B8; 2019 Copyright:
+      <a href="#"> one-ccs.com</a>
+    </div>
+  </footer>
+</body>
+
+</html>

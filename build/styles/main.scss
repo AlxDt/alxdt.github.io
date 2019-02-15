@@ -1,0 +1,334 @@
+@import "base";
+
+// Global Styles
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  &.sans {
+    font-family: $sans-serif !important;
+  }
+  &.serif {
+    font-family: $serif !important;
+  }
+  &.highlight {
+    color: $highlight-color !important;
+  }
+  &.bold {
+    font-weight: bold;
+  }
+}
+
+#content {
+  min-height: 125vh;
+}
+
+p, b, i, a, span {
+  font-family: $serif;
+  font-size: $content-size;
+  color: $content-color;
+  text-decoration: none !important;
+}
+
+.highlighted-header {
+  font-size: $header-size;
+  margin-top: 25px;
+  font-weight: bold;
+  position: relative;
+  display: inline-block;
+  font-family: $sans-serif;
+  color: $darker-gray;
+
+  &:after {
+    content: "";
+    top: 45%;
+    left: 10%;
+    width: 100%;
+    height: 60%;
+    z-index: -1;
+    position: absolute;
+    border-radius: 30px;
+    padding: 0 10px;
+    background-color: $light-green;
+  }
+}
+
+.show-mobile {
+  display: none;
+}
+
+// Navigation Styles
+#navigation {
+  #bars {
+    display: none;
+  }
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 29px 50px;
+  transition: padding-left 150ms;
+  background-color: #fff;
+  z-index: 9999;
+
+  &.fixed {
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    padding: 10px 50px 10px 25px !important;
+    border-bottom: 1px solid $green;
+
+    .icon {
+      width: $navicon-size / 1.5;
+      height: $navicon-size / 1.5;
+    }
+  }
+
+  .icon {
+    border-radius: 100%;
+    height: $navicon-size;
+    width: $navicon-size;
+    transition: all 250ms;
+
+    img {
+      border-radius: 100%;
+      width: inherit;
+      height: inherit;
+    }
+  }
+
+  .links {
+    background-color: #fff;
+    text-align: center;
+
+    ul {
+      margin: 0;
+    }
+
+    > ul > li {
+      min-width: 150px;
+      position: relative;
+
+      &:not(:last-child) {
+        margin-right: 10px;
+      }
+
+      &:hover > a, &.active > a{
+        background-color: $green;
+        color: #ffffff;
+      }
+
+      &:active > a, &:focus > a {
+        background-color: $darker-green;
+      }
+
+      &.dropdown {
+        > a i, > a span {
+          padding: 0 5px;
+          color: $green;
+        }
+
+        &:hover > a i, &:hover a span, &.active > a i, &.active > a span {
+          color: #ffffff;
+        }
+
+        &:hover > a {
+          border-radius: 3px 3px 0 0;
+        }
+      }
+
+      > a {
+        padding: 5px 10px;
+        width: 100%;
+        display: inline-block;
+        border-radius: $border-radius;
+
+      }
+    }
+
+    li a, li {
+      font-family: $sans-serif;
+      color: $link-color;
+      margin: 0;
+    }
+
+    > ul {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      list-style-type: none;
+
+      > li {
+        &:hover ul {
+          display: block;
+        }
+
+        ul {
+          top: 100%;
+          width: 100%;
+          display: none;
+          position: absolute;
+          list-style-type: none;
+          border: 1px solid $green;
+          background-color: #fff;
+          border-radius: 0 0 3px 3px;
+
+          >li {
+            a {
+              display: block;
+              padding: 5px;
+
+
+              &:hover {
+                color: #ffffff;
+                background-color: $green;
+              }
+
+              &:active,
+              &:focus {
+                color: #ffffff;
+                background-color: $darker-green;
+              }
+            }
+
+            &:not(:last-child) {
+              border-bottom: 1px solid $green;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+footer {
+  color: #ffffff;
+  padding: 10px auto;
+  text-align: center;
+  background-color: $green;
+
+  a {
+    color: #ffffff;
+
+    &:hover {
+      color: $light-green;
+    }
+  }
+
+  > div:first-child {
+    a {
+      margin: 10px;
+      font-size: $content-size + 5px;
+    }
+  }
+}
+
+@media screen and (max-width: 975px) {
+  .show-mobile {
+    display: block;
+  }
+
+  #navigation {
+      width: 100%;
+      top: 0;
+      left: 0;
+      position: fixed;
+      border-bottom: 1px solid $green;
+      flex-direction: column;
+      padding: 0;
+
+      #nav_header {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        padding: 10px 25px 10px 25px !important;
+        align-items: center;
+      }
+
+      #bars {
+        display: block;
+        border: 1px solid $green;
+        background-color: $green;
+        border-radius: 3px;
+        padding: 5px 8px;
+        cursor: pointer;
+        font-size: $header-smaller-size;
+        color: #ffffff;
+      }
+
+      #bars:hover, #bars:focus {
+        opacity: 0.8;
+      }
+
+      #bars:active {
+        opacity: 1.0;
+      }
+
+      .icon {
+        width: $navicon-size / 1.5;
+        height: $navicon-size / 1.5;
+      }
+
+      .links {
+        width: 100%;
+        max-height: 0px;
+        overflow: hidden;
+        transition: max-height 250ms;
+
+        &.show {
+          max-height: 575px;
+        }
+        ul {
+          flex-direction: column;
+          background-color: $green;
+
+          > li {
+            margin-right: 0 !important;
+            width: 100%;
+
+            * {
+              color: #ffffff;
+            }
+
+            > a {
+              display: block;
+              padding: 10px 0;
+
+              &:hover, &:focus {
+                background-color: $darker-green;
+              }
+              i {
+                color: #ffffff !important;
+              }
+            }
+
+            &.active > ul{
+              max-height: 140px;
+            }
+
+            > ul {
+              border: 0 !important;
+              overflow: hidden;
+              display: block;
+              max-height: 0;
+              position: relative;
+              background-color: $darker-green;
+              transition: max-height 250ms;
+
+              li {
+                border-bottom: 0 !important;
+
+                a {
+                  &:hover {
+                    background-color: $darkest-green;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+  }
+}

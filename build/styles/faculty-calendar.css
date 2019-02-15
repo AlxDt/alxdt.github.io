@@ -1,0 +1,261 @@
+#content {
+  margin: auto 50px;
+}
+
+#content #body {
+  margin: auto 50px;
+}
+
+#content #body form .group label {
+  font-family: "Sarabun", sans-serif;
+  color: #3C3C3C;
+}
+
+#content #body form .group select {
+  padding: 0 15px !important;
+  color: #555;
+}
+
+#content #body form .group select:focus, #content #body form .group select:active {
+  border: 1px solid #083B20;
+}
+
+#content #body #faculty {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#content #body #faculty .member {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 33%;
+          flex: 1 1 33%;
+  text-align: center;
+  margin-bottom: 75px;
+}
+
+#content #body #faculty .member img {
+  border-radius: 100%;
+  height: 250px;
+  width: 250px;
+}
+
+#content #body #faculty .member .details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#content #body #faculty .member .details .name {
+  font-family: "Sarabun", sans-serif;
+  color: #0B572E;
+  font-size: 24px !important;
+}
+
+#content #body #faculty .member .details a:hover {
+  color: #0B572E;
+  text-decoration: underline;
+}
+
+#content #body #faculty .member .details a:active, #content #body #faculty .member .details a:focus {
+  color: #083B20;
+}
+
+#content #body #faculty .member .details .consultation {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#content #body #faculty .member .details .consultation * {
+  font-size: 12px;
+}
+
+.body-calendar {
+  margin-top: 50px !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.body-calendar #year {
+  font-size: 48px;
+  font-weight: bold;
+  color: #083B20;
+}
+
+.body-calendar #months {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 891px;
+  margin-bottom: 10px;
+}
+
+.body-calendar #months > * {
+  cursor: pointer;
+  padding: 5px 15px;
+  border-bottom: 1px solid transparent;
+}
+
+.body-calendar #months > *.selected {
+  border-bottom: 1px solid #0B572E;
+}
+
+.body-calendar #months > *:hover {
+  color: #ffffff;
+  background-color: #0B572E;
+  border-radius: 3px;
+}
+
+.body-calendar #months > *:active, .body-calendar #months > *:focus {
+  background-color: #083B20;
+}
+
+.body-calendar #calendar thead {
+  background-color: #083B20;
+}
+
+.body-calendar #calendar thead tr th {
+  text-align: center;
+  padding: 10px 25px !important;
+  width: 125px;
+  min-width: 125px;
+  max-width: 125px;
+}
+
+.body-calendar #calendar thead * {
+  color: #fff;
+}
+
+.body-calendar #calendar tbody td {
+  border: 1px solid #bbb;
+  height: 125px;
+  min-height: 125px;
+  max-height: 125px;
+  width: 125px;
+  min-width: 125px;
+  max-width: 125px;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.body-calendar #calendar tbody td.selected, .body-calendar #calendar tbody td:hover {
+  background-color: rgba(9, 128, 15, 0.35);
+}
+
+.body-calendar #calendar tbody td:active, .body-calendar #calendar tbody td:focus {
+  background-color: rgba(9, 128, 15, 0.55);
+}
+
+.body-calendar #calendar tbody td .cell {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: inherit;
+  min-height: inherit;
+  max-height: inherit;
+  width: inherit;
+  min-width: inherit;
+  max-width: inherit;
+  overflow: hidden;
+  font-size: 12px;
+}
+
+.body-calendar #calendar tbody td .cell .day {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1;
+          flex: 0 1;
+  margin-right: 15px;
+  font-size: 12px;
+}
+
+.body-calendar #calendar tbody td .cell ul {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0;
+          flex: 1 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.body-calendar #calendar tbody td .cell ul li {
+  margin: 0;
+}
+
+.body-calendar #calendar tbody tr td:nth-child(2n) {
+  background-color: #0B572E;
+}
+
+.body-calendar #calendar tbody tr td:nth-child(2n).selected, .body-calendar #calendar tbody tr td:nth-child(2n):hover {
+  opacity: 0.9;
+}
+
+.body-calendar #calendar tbody tr td:nth-child(2n):focus, .body-calendar #calendar tbody tr td:nth-child(2n):active {
+  opacity: 1;
+}
+
+.body-calendar #calendar tbody tr td:nth-child(2n) * {
+  color: #fff;
+}
+
+.body-calendar #agenda {
+  min-height: 50vh;
+  margin-top: 50px;
+  width: 100%;
+  border-top: 1px solid #ccc;
+}
+
+.body-calendar #agenda .header h3 {
+  margin-top: 50px;
+  margin-bottom: 0;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.body-calendar #agenda .header span {
+  margin-top: 0;
+}
+
+.body-calendar #agenda .list {
+  margin-left: 50px;
+  margin-bottom: 50px;
+}
+
+.body-calendar #agenda .list li {
+  list-style: disc;
+  text-align: justify;
+  margin-top: 25px;
+  color: #2f2f2f;
+  font-family: "Aleo", serif;
+}
+/*# sourceMappingURL=faculty-calendar.css.map */

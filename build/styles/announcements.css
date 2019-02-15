@@ -1,0 +1,95 @@
+#content {
+  margin: auto;
+  margin-top: -2em;
+}
+
+#content #body {
+  margin: auto;
+}
+#searchbox
+{
+	display: flex;
+	padding-top: 3em;
+	padding-left: 5em;
+	/*justify-content: space-between;*/
+
+	font-family: Sarabun;
+	font-style: normal;
+	font-weight: bold;
+	line-height: normal;
+	font-size: 21px;
+	letter-spacing: 0.03em;
+
+	color: #3C3C3C;
+
+}
+#searchbox > div
+{
+	padding-right: 3em;
+
+}
+#title
+{
+	padding: 0 15px !important;
+  	color: #555;
+  	border: 1px solid #083B20;
+}
+#batch
+{
+
+	padding: 0 15px !important;
+  	color: #555;
+  	border: 1px solid #083B20;
+  	width:200px;
+
+}
+#date
+{
+	padding: 0 15px !important;
+  	color: #555;
+	border:1px solid #D1D1D1;
+	height:38px;
+	border-radius: 4px;
+	margin-left:  
+}
+
+.pagination 
+{
+ 	align-self: center;
+  	margin-left: 15em;
+  	margin-top: -5em;
+  	padding-bottom: 3em;
+  	
+
+}
+
+.pagination a 
+{
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: 0.3s;
+  border: 1px solid #0B572E;
+  margin:2px;
+}
+
+.pagination a.active 
+{
+  background-color: #0B572E;
+  color: white;
+  border: 1px solid #0B572E;
+}
+
+.pagination a:hover:not(.active) 
+{
+	background-color: #083B20;
+	color:white;
+}
+#caret, #caret:hover
+{
+	border: none;
+	border: 0;
+	background-color: white;
+	color:;
+}

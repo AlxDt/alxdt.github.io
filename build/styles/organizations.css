@@ -1,0 +1,36 @@
+#content {
+  margin: auto 50px;
+  margin-bottom: 5em;
+}
+
+.content-box{
+	margin: auto 50px;
+	margin-top: 3em;
+	display: flex;
+}
+.content-image > img{
+	margin: auto 50px;	
+	border-radius:100%;
+}
+.content-title{
+	font-family: Sarabun;
+	font-style: normal;
+	font-weight: bold;
+	line-height: normal;
+	font-size: 28px;
+	letter-spacing: 0.03em;
+
+	color: #0B572E;
+}
+.content-title > p
+{
+	font-family: Lusitana;
+	font-style: normal;
+	font-weight: normal;
+	line-height: 23px;
+	font-size: 16px;
+	text-align: justify;
+	letter-spacing: 0.03em;
+
+	color: #000000;
+}
