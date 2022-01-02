@@ -1,6 +1,19 @@
-.name-headline,
-.occupation-summary {
+.profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-picture {
+    border-radius: 50%;
+}
+
+.name {
     text-align: center;
+}
+
+.occupation-summary {
+    margin-top: -15px;
 }
 
 .name-headline {
@@ -9,4 +22,25 @@
 
 .occupation-summary {
     color: #D77A61;
+}
+
+.websites ul {
+    display: flex;
+    justify-content: center;
+    margin-left: -40px;
+    gap: 10px;
+}
+
+.websites-item {
+    margin: 0px;
+    list-style: none;
+}
+
+.bi {
+    font-size: 25px;
+}
+
+.text-content {
+    max-width: 1000px;
+    text-align: justify;
 }

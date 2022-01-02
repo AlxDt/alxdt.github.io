@@ -23,7 +23,7 @@ header {
 .navbar .logo {
     color: #FCBF49;
     font-family: 'Rock Salt', sans-serif;
-    font-size: 15px;
+    font-size: 12px;
 }
 
 nav ul {
@@ -46,5 +46,21 @@ h1 {
 a,
 a:visited {
     text-decoration: none;
-    color: black;
+    color: #4F5D2F;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a {
+    color: #140D4F;
+}
+
+.content {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
 }
