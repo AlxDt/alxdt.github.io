@@ -1,4 +1,5 @@
 body {
+    background-color: #faffff;
     font-family: 'Spline Sans', sans-serif;
 }
 
@@ -6,6 +7,10 @@ a,
 a:visited {
     text-decoration: none;
     color: black;
+}
+
+h1 {
+    font-weight: bolder;
 }
 
 .logo {
