@@ -1,0 +1,14 @@
+body {
+    font-family: 'Spline Sans', sans-serif;
+}
+
+a,
+a:visited {
+    text-decoration: none;
+    color: black;
+}
+
+.logo {
+    font-family: 'Alata', sans-serif;
+    font-size: 28px;
+}
