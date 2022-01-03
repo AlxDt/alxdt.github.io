@@ -52,7 +52,8 @@
     color: #335145;
 }
 
-.cv-description-university {
+.cv-description-university,
+.cv-description-conference {
     margin-top: 0px;
 }
 

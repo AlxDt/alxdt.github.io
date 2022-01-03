@@ -43,18 +43,13 @@ h1 {
     font-weight: bolder;
 }
 
-a,
-a:visited {
+a {
     text-decoration: none;
     color: #4F5D2F;
 }
 
 a:hover {
     text-decoration: underline;
-}
-
-a {
-    color: #140D4F;
 }
 
 .content {
