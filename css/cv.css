@@ -81,6 +81,7 @@
 .cv-content-skill {
     display: flex;
     justify-content: space-between;
+    align-items: flex-start;
     flex-wrap: wrap;
     gap: 30px;
 }
@@ -101,12 +102,20 @@
     color: #140D4F;
 }
 
-.cv-skill-set {
+.cv-language-set {
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
     gap: 25px;
+}
+
+.cv-framework-set {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
 .cv-concept-set {
