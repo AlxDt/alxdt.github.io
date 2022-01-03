@@ -137,6 +137,8 @@
 
 .cv-references {
     display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
     flex: 1 1 auto;
     gap: 20px;
 }
