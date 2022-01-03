@@ -54,6 +54,11 @@
 
 .cv-description-thesis {
     font-style: italic;
+    margin-bottom: 0px;
+}
+
+.cv-description-adviser {
+    margin-top: 0px;
 }
 
 .cv-description-honors {
