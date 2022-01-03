@@ -74,6 +74,51 @@
     margin-bottom: 0px;
 }
 
-.description-icon {
+.cv-description-icon {
     margin-right: 10px;
+}
+
+.cv-content-skill {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.cv-skill {
+    display: flex;
+    flex-direction: column;
+    background-color: #FFEFAD;
+    align-items: center;
+    padding: 20px;
+    width: 250px;
+    flex: 1 1 auto;
+    gap: 30px;
+}
+
+.cv-skill-title {
+    text-align: center;
+    color: #140D4F;
+}
+
+.cv-skill-set {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.cv-concept-set {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.cv-concept-description {
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 10px;
 }
