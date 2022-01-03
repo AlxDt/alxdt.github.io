@@ -39,6 +39,11 @@
 .bi {
     font-size: 25px;
     color: #335145;
+    transition: 0.25s;
+}
+
+.bi:hover {
+    color: #E7BB41;
 }
 
 .text-content {
