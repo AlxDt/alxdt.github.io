@@ -18,7 +18,7 @@
 }
 
 .cv-content {
-    justify-content: space-between;
+    justify-content: flex-start;
     padding: 10px;
     flex: 1 1 auto;
     gap: 30px;
@@ -29,6 +29,7 @@
     max-width: 130px;
     text-align: right;
     flex: 1 1 auto;
+    justify-content: flex-end;
 }
 
 .cv-description {
@@ -38,23 +39,26 @@
 
 .cv-time-period,
 .cv-description-degree,
-.cv-description-university,
 .cv-description-notes {
     margin: 0px;
 }
 
 .cv-time-period {
     font-weight: 100;
-    font-style: italic;
+    font-style: italic
 }
 
 .cv-description-degree {
     color: #335145;
 }
 
+.cv-description-university {
+    margin-top: 0px;
+}
+
 .cv-description-thesis {
     font-style: italic;
-    margin-bottom: 0px;
+    margin: 0px;
 }
 
 .cv-description-adviser {
