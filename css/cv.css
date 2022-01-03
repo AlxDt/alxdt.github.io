@@ -11,7 +11,7 @@
 }
 
 .cv-category {
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: stretch;
     flex: 1 1 auto;
     gap: 10px;
@@ -26,14 +26,14 @@
 }
 
 .cv-time {
-    max-width: 130px;
+    width: 100px;
     text-align: right;
-    flex: 1 1 auto;
+    flex: 0 0 auto;
     justify-content: flex-end;
 }
 
 .cv-description {
-    max-width: 900px;
+    max-width: 1000px;
     flex: 1 1 auto;
 }
 
