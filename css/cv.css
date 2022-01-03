@@ -14,7 +14,7 @@
     justify-content: flex-start;
     align-items: stretch;
     flex: 1 1 auto;
-    gap: 10px;
+    gap: 2g0px;
 }
 
 .cv-content {
@@ -83,7 +83,7 @@
     justify-content: space-between;
     align-items: flex-start;
     flex-wrap: wrap;
-    gap: 30px;
+    gap: 20px;
 }
 
 .cv-skill {
