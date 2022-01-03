@@ -1,0 +1,67 @@
+.cv-category,
+.cv-content,
+.cv-time,
+.cv-description {
+    display: flex;
+}
+
+.cv-category,
+.cv-description {
+    flex-direction: column;
+}
+
+.cv-category {
+    justify-content: space-between;
+    align-items: stretch;
+    flex: 1 1 auto;
+    gap: 10px;
+}
+
+.cv-content {
+    justify-content: space-between;
+    padding: 10px;
+    flex: 1 1 auto;
+    gap: 30px;
+    background-color: #F4F5F4;
+}
+
+.cv-time {
+    max-width: 130px;
+    text-align: right;
+    flex: 1 1 auto;
+}
+
+.cv-description {
+    max-width: 900px;
+    flex: 1 1 auto;
+}
+
+.cv-time-period,
+.cv-description-degree,
+.cv-description-university,
+.cv-description-notes {
+    margin: 0px;
+}
+
+.cv-time-period {
+    font-weight: 100;
+    font-style: italic;
+}
+
+.cv-description-degree {
+    color: #335145;
+}
+
+.cv-description-thesis {
+    font-style: italic;
+}
+
+.cv-description-honors {
+    font-weight: bolder;
+    color: #DAA71B;
+    margin-bottom: 0px;
+}
+
+.description-icon {
+    margin-right: 10px;
+}
