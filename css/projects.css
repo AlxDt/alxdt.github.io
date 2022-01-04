@@ -21,8 +21,11 @@
 }
 
 .project-video-caption {
+    background-color: #F4F5F4;
     text-align: center;
     font-style: italic;
+    font-size: smaller;
+    padding: 10px;
 }
 
 .project-video-description {
