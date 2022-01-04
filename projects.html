@@ -44,7 +44,12 @@
                 </video>
             </div>
             <div class="project-video-caption">
-                A demonstration of the train and crowd simulation featuring the platforms of the Santolan station of the LRT-2 line. Passengers are seen to wait for a train on the platform. More passengers are seen alighting from a train at the beginning (0:02). A view of the Santolan station concourse is then seen (0:08) with passengers lining up for the security gate, ticket booths, and turnstiles. The alighting passengers coming from the upper floor are seen to descend from the stairs and escalators. As the view returns to the platforms (0:18), passengers are seen to board a train towards the end of the video (0:28)
+                A demonstration of the train and crowd simulation featuring the platforms of the Santolan station of the
+                LRT-2 line. Passengers are seen to wait for a train on the platform. More passengers are seen alighting
+                from a train at the beginning (0:02). A view of the Santolan station concourse is then seen (0:08) with
+                passengers lining up for the security gate, ticket booths, and turnstiles. The alighting passengers
+                coming from the upper floor are seen to descend from the stairs and escalators. As the view returns to
+                the platforms (0:18), passengers are seen to board a train towards the end of the video (0:28).
             </div>
             <p class="project-video-description">
                 I am currently working on an agent-based model of Metro Manila's three rapid transit train systems
@@ -52,17 +57,29 @@
                 both train
                 operations and passenger crowds within each train system. The goal of the model is to allow for the
                 observation and analysis of how the deployed trains and the passengers as crowds influence each
-                other. To support the high level of integration between train and crowd dynamics, numerous
+                other. The model was validated against empirical smart card trip data and video recordings of stations
+                to ensure fidelity to the real-world train systems.
+                <br>
+                <br>
+                To support the high level of integration between train and crowd dynamics, numerous
                 techniques have been used to optimize the model such as parallelization of agent simulation,
-                precomputing of paths and routes, and caching of commonly-computed results.
+                precomputing of paths and routes, and caching of commonly-computed results. The model is made with Java,
+                using JavaFX as the graphical user interface (GUI) framework. The model parameters are stored in an
+                SQLite relational database.
                 <br>
                 <br>
-                I started developing this model in December of 2019 for my Master's thesis and has been awarded the
+                I started developing this model in December of 2019 for my Master's thesis under the tutelage of <a
+                    href="https://unissechua.github.io">
+                    Unisse
+                    Chua
+                </a> and <a href="https://brianesamson.com">Dr. Briane Samson</a> under the <a href="https://comet.dlsu.edu.ph/">Center for Complexity and
+                    Emerging Technologies (COMET) laboratory</a>.
+                The research has been awarded the
                 <strong>gold medal for outstanding thesis</strong> by the College of Computer Studies (CCS) in
                 September 2021. In December 2021, I presented this work at the 17th ERDT Conference and has been
                 awarded as the <strong><a href="https://www.facebook.com/photo/?fbid=279602774208741">best
                         paper</a></strong> among Information and Communications Technology (ICT) topics. This system
-                has since been incorporated in the System for Optimized Routing for
+                has since been incorporated with the System for Optimized Routing for
                 Transport (SORT) project of the Department of Science and Technology (DOST). As part of the SORT
                 team, we plan on extending this model to support even higher and more comprehensive levels of
                 integration (such as the simulation of all train systems at once), as well as for the support of
@@ -77,18 +94,58 @@
             </p>
         </div>
         <div class="project">
-            <h2 class="content-subtitle">ViTune</h2>
+            <h2 class="content-subtitle">
+                ViTune
+                <a href="https://github.com/AlxDt/vitune"><span class="bi bi-github"></span></a>
+                <a href="files/vitune-publication.pdf"><span class="bi bi-file-earmark-pdf-fill"></span></a>
+            </h2>
             <div class="project-video-container">
                 <video class="project-video" controls>
                     <source src="assets/videos/vitune-primer.mp4" type="video/mp4">
                     Sorry, your browser does not support the &lt;video&gt; tag.
                 </video>
             </div>
+            <div class="project-video-caption">
+                A primer for the ViTune project. A short demonstration of the visualizer prototype is shown towards the
+                end of the video (0:15). This primer was narrated by Carlo Eroles.
+            </div>
+            <p class="project-video-description">
+                I worked on a prototype for a music visualizer made for the Deaf and Hard of Hearing (DHH) community.
+                The system aimed to augment the musical experience of the DHH community through the visualizations
+                produced by the prototype. The visualizations were designed according to principles set in related
+                literature as well as with direct consultations with the DHH community. The prototype was incrementally
+                improved through three iterations.
+                <br>
+                <br>
+                The prototype was made in Python using Django as its framework. Audio processing techniques such as beat
+                detection, fast Fourier transforms (FFT), and the use of spectrograms to detect the notes of .wav music
+                files were utilized to produce the visualizations.
+                <br>
+                <br>
+                Together with Toei Ciriaco, Carlo Eroles, and Hans Lee, we developed the prototype over the course of a
+                year starting October of 2018 and finishing September of 2019 as part of our requirements for a
+                Bachelor's degree in Computer Science. We were advised by Jordan Deja under the <a
+                    href="https://comet.dlsu.edu.ph/">Center for Complexity and Emerging Technologies (COMET)
+                    laboratory</a>. We were in close collaboration with interpreters and the DHH community through the
+                <a href="https://www.benilde.edu.ph/academics/sdeas.html">School of Deaf Education and Studies
+                    (SDEAS)</a> of the De La Salle - College of Saint Benilde. In April 2020, <a href="https://doi.org/10.1145/3334480.3383046">the tool was featured as part of the Late-Breaking Works for the ACM CHI Conference on Human Factors in Computing Systems Conference</a>.
+                <br>
+                <br>
+                <strong>GitHub</strong>: <a href="https://github.com/AlxDt/vitune">https://github.com/AlxDt/vitune</a>
+                <br>
+                <strong>Publication</strong>: <a href="files/vitune-publication.pdf">ViTune: A Visualizer Tool to Allow
+                    the Deaf and Hard of Hearing to See Music With Their Eyes</a>
+            </p>
             <div class="project-video-container">
                 <video class="project-video" controls>
                     <source src="assets/videos/vitune-demo.mp4" type="video/mp4">
                     Sorry, your browser does not support the &lt;video&gt; tag.
                 </video>
+            </div>
+            <div class="project-video-caption">
+                A demonstration of the prototype visualizing the song <a
+                    href="https://www.youtube.com/watch?v=FBrhjrHcWw0">"Komm, süsser Tod" as performed by Jenny</a>. The
+                visualization may also include captions of songs with lyrics.
             </div>
         </div>
     </div>
