@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&family=Spline+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/default.css">
+    <link rel="stylesheet" href="css/projects.css">
 </head>
 
 <body>
@@ -30,20 +31,30 @@
     </header>
     <div class="content">
         <h1 class="content-title">Projects</h1>
-        <h2>Train and Crowd Simulation</h2>
-        <video width="700" height="auto" controls>
-            <source src="assets/videos/tracs-demo.mp4" type="video/mp4">
-            Sorry, your browser does not support the &lt;video&gt; tag.
-        </video>
-        <h2>ViTune</h2>
-        <video width="700" height="auto" controls>
-            <source src="assets/videos/vitune-primer.mp4" type="video/mp4">
-            Sorry, your browser does not support the &lt;video&gt; tag.
-        </video>
-        <video width="700" height="auto" controls>
-            <source src="assets/videos/vitune-demo.mp4" type="video/mp4">
-            Sorry, your browser does not support the &lt;video&gt; tag.
-        </video>
+        <div class="project">
+            <h2 class="content-subtitle">Train and Crowd Simulation</h2>
+            <div class="project-video-container">
+                <video class="project-video" height="auto" controls>
+                    <source src="assets/videos/tracs-demo.mp4" type="video/mp4">
+                    Sorry, your browser does not support the &lt;video&gt; tag.
+                </video>
+            </div>
+        </div>
+        <div class="project">
+            <h2 class="content-subtitle">ViTune</h2>
+            <div class="project-video-container">
+                <video class="project-video" controls>
+                    <source src="assets/videos/vitune-primer.mp4" type="video/mp4">
+                    Sorry, your browser does not support the &lt;video&gt; tag.
+                </video>
+            </div>
+            <div class="project-video-container">
+                <video class="project-video" controls>
+                    <source src="assets/videos/vitune-demo.mp4" type="video/mp4">
+                    Sorry, your browser does not support the &lt;video&gt; tag.
+                </video>
+            </div>
+        </div>
     </div>
 </body>
 

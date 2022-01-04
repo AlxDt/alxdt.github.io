@@ -1,0 +1,17 @@
+.project {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+.project-video-container {
+    display: flex;
+    justify-content: center;
+    flex: 1 1 auto;
+}
+
+.project-video {
+    width: 100px;
+    flex: 1 1 auto;
+}
