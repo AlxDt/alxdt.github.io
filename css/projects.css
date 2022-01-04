@@ -1,3 +1,7 @@
+.bi {
+    margin-left: 10px;
+}
+
 .project {
     display: flex;
     flex-direction: column;
@@ -14,4 +18,13 @@
 .project-video {
     width: 100px;
     flex: 1 1 auto;
+}
+
+.project-video-caption {
+    text-align: center;
+    font-style: italic;
+}
+
+.project-video-description {
+    text-align: justify;
 }

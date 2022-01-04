@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&family=Spline+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
     <link rel="stylesheet" href="css/default.css">
     <link rel="stylesheet" href="css/projects.css">
 </head>
@@ -32,13 +33,48 @@
     <div class="content">
         <h1 class="content-title">Projects</h1>
         <div class="project">
-            <h2 class="content-subtitle">Train and Crowd Simulation</h2>
+            <h2 class="content-subtitle">Train and Crowd Simulation
+                <a href="https://github.com/dlsucomet/trainsim"><span class="bi bi-github"></span></a>
+                <a href="files/tracs-technical-paper.pdf"><span class="bi bi-file-earmark-pdf-fill"></span></a>
+            </h2>
             <div class="project-video-container">
                 <video class="project-video" height="auto" controls>
                     <source src="assets/videos/tracs-demo.mp4" type="video/mp4">
                     Sorry, your browser does not support the &lt;video&gt; tag.
                 </video>
             </div>
+            <div class="project-video-caption">
+                A demonstration of the train and crowd simulation featuring the platforms of the Santolan station of the LRT-2 line. Passengers are seen to wait for a train on the platform. More passengers are seen alighting from a train at the beginning (0:02). A view of the Santolan station concourse is then seen (0:08) with passengers lining up for the security gate, ticket booths, and turnstiles. The alighting passengers coming from the upper floor are seen to descend from the stairs and escalators. As the view returns to the platforms (0:18), passengers are seen to board a train towards the end of the video (0:28)
+            </div>
+            <p class="project-video-description">
+                I am currently working on an agent-based model of Metro Manila's three rapid transit train systems
+                (LRT-1, LRT-2, and MRT-3). The model <strong>comprehensively and simultaneously</strong> simulates
+                both train
+                operations and passenger crowds within each train system. The goal of the model is to allow for the
+                observation and analysis of how the deployed trains and the passengers as crowds influence each
+                other. To support the high level of integration between train and crowd dynamics, numerous
+                techniques have been used to optimize the model such as parallelization of agent simulation,
+                precomputing of paths and routes, and caching of commonly-computed results.
+                <br>
+                <br>
+                I started developing this model in December of 2019 for my Master's thesis and has been awarded the
+                <strong>gold medal for outstanding thesis</strong> by the College of Computer Studies (CCS) in
+                September 2021. In December 2021, I presented this work at the 17th ERDT Conference and has been
+                awarded as the <strong><a href="https://www.facebook.com/photo/?fbid=279602774208741">best
+                        paper</a></strong> among Information and Communications Technology (ICT) topics. This system
+                has since been incorporated in the System for Optimized Routing for
+                Transport (SORT) project of the Department of Science and Technology (DOST). As part of the SORT
+                team, we plan on extending this model to support even higher and more comprehensive levels of
+                integration (such as the simulation of all train systems at once), as well as for the support of
+                more transport modes.
+                <br>
+                <br>
+                <strong>GitHub</strong>: <a
+                    href="https://github.com/dlsucomet/trainsim">https://github.com/dlsucomet/trainsim</a>
+                <br>
+                <strong>Technical Paper</strong>: <a href="files/tracs-technical-paper.pdf">Investigating the
+                    Interaction Between Crowd Dynamics and Train Operations Through Agent-Based Modeling</a>
+            </p>
         </div>
         <div class="project">
             <h2 class="content-subtitle">ViTune</h2>
