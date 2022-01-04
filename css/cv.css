@@ -103,6 +103,7 @@
 .cv-skill-title {
     text-align: center;
     color: #140D4F;
+    margin: 0px;
 }
 
 .cv-language-set {
@@ -110,7 +111,7 @@
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
-    gap: 25px;
+    gap: 30px;
 }
 
 .cv-framework-set {
@@ -118,7 +119,7 @@
     justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 30px;
 }
 
 .cv-concept-set {
@@ -126,13 +127,12 @@
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    gap: 25px;
+    gap: 30px;
 }
 
 .cv-concept-description {
     text-align: center;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 10px;
+    font-size: 9px;
 }
 
 .cv-references {
