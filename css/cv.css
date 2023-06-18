@@ -39,6 +39,7 @@
 .cv-time-period,
 .cv-description-degree,
 .cv-description-publication-title,
+.cv-description-certification-title,
 .cv-reference-name,
 .cv-description-notes {
     margin: 0px;
@@ -57,6 +58,7 @@
 
 .cv-description-university,
 .cv-description-conference,
+.cv-description-certificate-source,
 .cv-reference-position {
     margin-top: 0px;
 }
